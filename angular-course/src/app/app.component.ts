@@ -8,5 +8,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-course';
+    /* we can define variable directly */
+//   title = 'Angular course deep dive';
+
+    /* We can create the multiple variables in an object */
+    data ={
+      title: 'Angular course deep dive'
+    };
+
 }
