@@ -227,6 +227,8 @@
       </svg>
       <h1>Hello, {{ data.title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <input class="demo1" value="Test">
+      <input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

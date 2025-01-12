@@ -1,0 +1,16 @@
+input.demo{
+boarder: 2px solid black;
+width: 250px;
+height: 30px;
+font-size:25px;
+}
+
+input.demo1{
+  margin-top: 10px; /* Space above individual inputs */
+  margin-bottom: 10px; /* Space below individual inputs */
+  padding: 5px; /* Adjust input padding */
+boarder: 2px solid black;
+width: 250px;
+height: 30px;
+font-size:25px;
+}

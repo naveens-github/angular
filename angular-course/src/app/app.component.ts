@@ -16,4 +16,8 @@ export class AppComponent {
       title: 'Angular course deep dive'
     };
 
+    onKeyUp(newTitle:string){
+    this.data.title = newTitle;
+    }
+
 }
