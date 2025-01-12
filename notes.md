@@ -21,4 +21,23 @@ In the template (HTML):
 <h1>Welcome to {{ title }}</h1>
 ```
 
-   
+#### What is the [] syntax in Angular called, and how is it used?
+    1. The [] syntax in Angular is called "Property Binding". Property Binding allows you to set the value of an element's property dynamically.
+
+In the component's TypeScript file:
+```
+export class AppComponent {
+    title = 'Welcome to Angular';
+}
+```
+
+In the template (HTML):
+```
+<input class="demo1" [value]="title">
+```
+If we want to pass a String instead of the dynamic value. We have to place that String in quotes. 
+```
+Ex: <input class="demo1" [value]="'Hello World'">
+```
+
+
