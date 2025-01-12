@@ -40,4 +40,22 @@ If we want to pass a String instead of the dynamic value. We have to place that 
 Ex: <input class="demo1" [value]="'Hello World'">
 ```
 
+#### What is the purpose of the () syntax in Angular, and how is it used?
+    In Angular, the () syntax is used for Event Binding. It binds an event (like click, keyup, etc.) from the template to a method or an expression in the component's TypeScript class.
+    Event Binding listens to DOM events (e.g., click, keydown, keyup) and triggers the associated method in the component. It connects the view (HTML) with the logic (TypeScript) to handle user actions.
+
+In the component's TypeScript file:
+```
+export class AppComponent {
+  onInputChange(event: any) {
+    console.log('Input value:', event.target.value);
+  }
+}
+```
+
+In the template (HTML):
+```
+<input (input)="onInputChange($event)" placeholder="Type something">
+```
+
 
